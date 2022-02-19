@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background: url("https://i.ibb.co/fkVFmRj/andreas-gabler-XEW-Wd4240c-unsplash.webp");
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  background-color: blueviolet;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.block {
+  background-color: black;
+  width: 500px;
+  height: 300px;
+  flex-grow: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .block {
+    flex-grow: 1;
+  }
+}
